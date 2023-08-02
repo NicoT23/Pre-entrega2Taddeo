@@ -1,0 +1,391 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav {
+  background-color: black;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body1 {
+  width: 100%;
+  height: 150px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a {
+  color: gold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.main1 {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 900px 200px;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.imgindex img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.logomain img {
+  width: 100%;
+  height: 200px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: gold;
+}
+.redes {
+  display: flex;
+  gap: 10px;
+}
+.ubic {
+  text-align: center;
+}
+.footerimg {
+  padding-left: 20px;
+}
+.redes img {
+  width: 30px;
+  height: 30px;
+}
+h4 {
+  margin: 0;
+}
+
+.footerimg img {
+  display: flex;
+}
+
+/* Sobre nosotros */
+.main2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  align-items: center;
+  height: 800px;
+  background-color: black;
+  padding: 40px;
+}
+
+.imgsobre {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+.imgsobre img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h3 {
+  color: rgb(202, 200, 200);
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+  /* Entrenamiento */ 
+ 
+  .body3 {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+.div3-2 li {
+    color: rgb(202, 200, 200);
+    font-size: 20px;
+}
+
+.main3 {
+    color: white;
+    height: 900px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding: 40px;
+}
+
+.imgentr {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-left: 100px;
+}
+
+.imgentr img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.div3-1 h3 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    max-width: 100%;
+    grid-column: 2; 
+    grid-row: 1; 
+}
+
+
+.div3-2 {
+    list-style: none;
+    color: rgb(202, 200, 200);
+    font-size: 20px;
+    grid-column: 2; 
+    grid-row: 2; 
+}
+
+
+/* Alimentación */
+.body4 {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
+
+.body4 li {
+  color: rgb(202, 200, 200);
+  font-size: 20px;
+}
+
+.main4 {
+  color: white;
+  height: 900px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+}
+
+.imgalim {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  padding-left: 100px;
+}
+
+.imgalim img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main4 h3 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  max-width: 100%;
+  grid-column: 2; 
+}
+
+/* Contacto */
+.main5 {
+  width: 100%;
+  height: 900px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  max-width: 100%;
+  padding: 20px;
+  border: 1px solid white;
+}
+
+form h2 {
+  color: rgb(202, 200, 200);
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  color: rgb(202, 200, 200);
+  font-size: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.form-group label {
+  padding-right: 10px;
+}
+
+.form-group .submit5,
+.form-group .reset5 {
+  background-color: gold;
+  font-size: 15px;
+}
+
+/* Responsive iPhone 14 pro max 430 x 932 píxeles  */
+@media screen and (max-width: 430px) {
+  .header .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    width: 100px;
+    padding-top: 100px;
+  }
+  .menu {
+    padding-left: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu li {
+    margin-bottom: 5px;
+  }
+  .menu li a {
+    color: gold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .main1 .imgindex {
+    padding-top: 20px; 
+  }
+.main1{
+ height: 800px;
+}
+  .main1 .logomain {
+    display: none;
+  }
+
+  .main1 .imgindex img {
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  .footer {
+    padding: 20px; 
+  }
+
+  .redes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-left:45px ;
+    padding-right:30px;
+  }
+
+  .redes img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footerimg {
+    padding-left: 0;
+  }
+
+  .footer .footerimg img {
+    display: none;
+}
+
+.ubic{
+  display: none;
+}
+
+/* Alimentación */
+.body4 {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: black;
+  padding-top: 20px;
+}
+
+.body4 li {
+  color: rgb(202, 200, 200);
+  font-size: 18px;
+}
+
+.main4 {
+  color: white;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.imgalim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgalim img {
+  max-width: 100%;
+  max-height: 300px;
+  padding-right: 90px;
+}
+.main4 h3 {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+.main4 h3{
+  padding-left: 40px;
+  padding-right: 40px;
+  
+}
+
+}
+
